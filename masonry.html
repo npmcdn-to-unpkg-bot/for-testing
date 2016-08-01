@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Masonry</title>
+	<script src="https://npmcdn.com/masonry-layout@4.1/dist/masonry.pkgd.min.js"></script>
+	<link rel="stylesheet" href="css/masonrycss.css">
+</head>
+
+<body>
+
+<div class="wraper">
+	<div class="grid">
+	  <div class="grid-item">...</div>
+	  <div class="grid-item grid-item--width2">...</div>
+	  <div class="grid-item">...</div>
+	  <div class="grid-item grid-item--width2">...</div>
+	  <div class="grid-item">...</div>
+	  <div class="grid-item grid-item--width2">...</div>
+	  <div class="grid-item grid-item--width2">...</div>
+	  <div class="grid-item grid-item--width2">...</div>
+	  <div class="grid-item grid-item--width2">...</div>
+	  <div class="grid-item">...</div>
+	  <div class="grid-item">...</div>
+	  <div class="grid-item">...</div>
+	  <div class="grid-item grid-item--width2">...</div>
+	  <div class="grid-item grid-item--width2">...</div>
+	</div>
+</div>
+
+<script>
+	var elem = document.querySelector('.grid');
+	var msnry = new Masonry( elem, {
+	  // options
+	  itemSelector: '.grid-item',
+	  columnWidth: 200
+	});
+	
+	/*msnry.layout()*/
+</script>
+
+</body>
+
+</html>
